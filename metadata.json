@@ -1,0 +1,6 @@
+{
+  "name": "Jornada Interativa - Flávio Bolsonaro",
+  "description": "Uma experiência interativa com urna eletrônica e quiz abordando fatos políticos sobre Flávio Bolsonaro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
