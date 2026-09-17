@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { questions } from '../data/questions';
 import { QuizQuestion } from './QuizQuestion';
 
@@ -9,6 +9,11 @@ interface QuizProps {
 export function Quiz({ onComplete }: QuizProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
+
+  // Scroll para o topo sempre que a pergunta mudar
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentQuestionIndex]);
 
   const handleNext = (selectedAnswer: string) => {
     const newAnswers = [...answers, selectedAnswer];

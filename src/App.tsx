@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { VotingMachine } from './components/VotingMachine';
 import { Transition } from './components/Transition';
 import { Quiz } from './components/Quiz';
@@ -15,6 +15,11 @@ type Stage = 'voting' | 'transition' | 'quiz' | 'result' | 'product';
 export default function App() {
   const [stage, setStage] = useState<Stage>('voting');
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
+
+  // Scroll para o topo sempre que a fase (tela) mudar
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [stage]);
 
   const handleVotingConfirm = () => {
     setStage('transition');
