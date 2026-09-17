@@ -29,8 +29,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 
 export function ProductCard() {
   const handleCheckout = () => {
-    // Espaço para inserir o link real de checkout posteriormente
-    window.location.href = "#checkout";
+    window.location.href = "https://pay.cakto.com.br/ufdvwog_1115781";
   };
 
   return (
@@ -65,7 +64,7 @@ export function ProductCard() {
                 onClick={handleCheckout}
                 className="w-full bg-green-600 hover:bg-green-500 text-white font-black text-xl py-5 rounded-2xl shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-b-4 border-green-800 active:border-b-0 active:translate-y-1"
               >
-                QUERO O MANUAL POR R$ 10,99
+                QUERO O MANUAL POR R$ 17,99
               </button>
               <p className="text-sm font-medium text-green-300/80 text-center uppercase tracking-wider">
                 Pagamento único • Acesso ao produto digital
@@ -173,7 +172,7 @@ export function ProductCard() {
           
           <div className="flex-1">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-10 leading-tight">
-              Por R$ 10,99, você leva um material para consultar quando quiser.
+              Por R$ 17,99, você leva um material para consultar quando quiser.
             </h2>
             
             <h3 className="text-2xl font-bold text-green-400 mb-8 uppercase tracking-widest">
@@ -234,7 +233,7 @@ export function ProductCard() {
             </h2>
             
             <div className="mb-2">
-              <span className="text-7xl md:text-8xl font-black text-green-900 tracking-tighter drop-shadow-sm">R$ 10,99</span>
+              <span className="text-7xl md:text-8xl font-black text-green-900 tracking-tighter drop-shadow-sm">R$ 17,99</span>
             </div>
             <p className="text-xl text-gray-500 font-bold mb-10 uppercase tracking-widest">Pagamento único</p>
             
@@ -337,7 +336,7 @@ export function ProductCard() {
               />
               <FAQItem 
                 question="3. Quanto custa?" 
-                answer="O valor é R$ 10,99, em pagamento único." 
+                answer="O valor é R$ 17,99, em pagamento único." 
               />
               <FAQItem 
                 question="4. Preciso conhecer política para ler?" 
