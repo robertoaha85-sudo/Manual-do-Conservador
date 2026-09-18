@@ -1,6 +1,6 @@
 {
-  "name": "Jornada Interativa - Flávio Bolsonaro",
-  "description": "Uma experiência interativa com urna eletrônica e quiz abordando fatos políticos sobre Flávio Bolsonaro.",
+  "name": "Manual do Conservador",
+  "description": "Manual do Conservador - Conteúdo organizado, conceitos fundamentais e princípios do pensamento conservador.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
